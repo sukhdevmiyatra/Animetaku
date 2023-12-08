@@ -61,15 +61,7 @@ const SidebarStyled = styled.div`
     }
 
     @media screen and (max-width: 768px) {
-        padding-right: 2rem;
-        padding-left: 2rem;
-        /* Adjust other styles for smaller screens */
-    }
-
-    @media screen and (max-width: 480px) {
-        padding-right: 1rem;
-        padding-left: 1rem;
-        /* Adjust other styles for even smaller screens */
+        display: none; /* Hide the sidebar on screens smaller than 768px */
     }
 `;
 
