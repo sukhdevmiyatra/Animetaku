@@ -48,7 +48,7 @@ function Homepage() {
                     </div>
                     <form action="" className="search-form" onSubmit={handleSubmit}>
                         <div className="input-control">
-                            <input type="text" placeholder="Search Anime" value={search} onChange={handleChange} />
+                            <input type="text" placeholder="Search" value={search} onChange={handleChange} />
                             <button type="submit">Search</button>
                         </div>
                     </form>
@@ -95,8 +95,10 @@ const HomepageStyled = styled.div`
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 1rem;
+            gap: 1rem;         
 
+
+           
             button {
                 display: flex;
                 align-items: center;
@@ -110,6 +112,8 @@ const HomepageStyled = styled.div`
                 transition: all .4s ease-in-out;
                 font-family: inherit;
                 border: 5px solid #e5e7eb;
+                
+               
             }
 
             form {
@@ -119,6 +123,9 @@ const HomepageStyled = styled.div`
                 .input-control {
                     position: relative;
                     transition: all .4s ease-in-out;
+                    @media screen and (max-width: 768px) {
+                        right: 50px
+                    }
 
                     input {
                         width: 100%;
@@ -129,7 +136,8 @@ const HomepageStyled = styled.div`
                         font-size: 1.2rem;
                         background-color: #fff;
                         border: 5px solid #e5e7eb;
-                        transition: all .4s ease-in-out;
+                        transition: all .4s ease-in-out;                       
+                        
                     }
 
                     button {
@@ -137,6 +145,9 @@ const HomepageStyled = styled.div`
                         right: 0;
                         top: 50%;
                         transform: translateY(-50%);
+                        @media screen and (max-width: 768px) {
+                            left: 100%
+                        }
                     }
                 }
             }
