@@ -52,7 +52,7 @@ function AnimeItem() {
             <div className="details">
                 <div className="detail">
                     <div className="image">
-                        <img src={images?.jpg.large_image_url} alt="Anime Image" />
+                        <img src={images?.webp.large_image_url} alt="Anime Image" />
                     </div>
                     <div className="anime-details">
                         <p><span>Aired:</span><span>{aired?.string}</span></p>
