@@ -11,7 +11,7 @@ function Popular({rendered}) {
         if(!isSearch && rendered === 'popular'){
             return popularAnime?.map((anime) => {
                 return <Link to={`/anime/${anime.mal_id}`} key={anime.mal_id}>
-                    <img src={anime.images.jpg.large_image_url} alt="Anime Image" />
+                    <img src={anime.images.webp.large_image_url} alt="Anime Image" />
                 </Link>
             })
         }else{
