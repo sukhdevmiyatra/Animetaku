@@ -11,13 +11,13 @@ function Upcoming({rendered}) {
         if(!isSearch && rendered === 'upcoming'){
             return upcomingAnime?.map((anime) => {
                 return <Link to={`/anime/${anime.mal_id}`} key={anime.mal_id}>
-                    <img src={anime.images.jpg.large_image_url} alt="" />
+                    <img src={anime.images.jpg.large_image_url} alt="Anime Image" />
                 </Link>
             })
         }else{
             return searchResults?.map((anime) => {
                 return <Link to={`/anime/${anime.mal_id}`} key={anime.mal_id}>
-                    <img src={anime.images.jpg.large_image_url} alt="" />
+                    <img src={anime.images.jpg.large_image_url} alt="Anime Image" />
                 </Link>
             })
         }
