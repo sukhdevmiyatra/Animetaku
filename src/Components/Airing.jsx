@@ -11,13 +11,13 @@ function Airing({rendered}) {
         if(!isSearch && rendered === 'airing'){
             return airingAnime?.map((anime) => {
                 return <Link to={`/anime/${anime.mal_id}`} key={anime.mal_id}>
-                    <img src={anime.images.jpg.large_image_url} alt="Anime Image" />
+                    <img src={anime.images.webp.large_image_url} alt="Anime Image" />
                 </Link>
             })
         }else{
             return searchResults?.map((anime) => {
                 return <Link to={`/anime/${anime.mal_id}`} key={anime.mal_id}>
-                    <img src={anime.images.jpg.large_image_url} alt="Anime Image" />
+                    <img src={anime.images.webp.large_image_url} alt="Anime Image" />
                 </Link>
             })
         }
