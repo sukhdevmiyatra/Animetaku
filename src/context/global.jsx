@@ -73,7 +73,7 @@ export const GlobalContextProvider = ({children}) => {
     //fetch popular anime
     const getPopularAnime = async () => {
         dispatch({type: LOADING})
-        const response = await fetch(`${baseUrl}/top/anime?filter=bypopularity`);
+        const response = await fetch(`${baseUrl}/top/anime`);
         const data = await response.json();
         dispatch({type: GET_POPULAR_ANIME, payload: data.data})
     }
