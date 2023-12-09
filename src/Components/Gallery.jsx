@@ -28,7 +28,7 @@ function Gallery() {
                 </Link>
             </div>
             <div className="big-image">
-                <img src={pictures[index]?.jpg.image_url} alt="" />
+                <img src={pictures[index]?.jpg.image_url} alt="Anime Image" />
             </div>
             <div className="small-images">
                 {pictures?.map((picture, i) => {
